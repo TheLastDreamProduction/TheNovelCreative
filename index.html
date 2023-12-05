@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Novel Creative</title>
+  <meta name="title" content="Adex">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#about" class="logo">
+        <img src="./assets/images/logo-light.png" width="64" alt="Adex home" class="logo-light">
+
+        <img src="./assets/images/logo-dark.png" width="64" alt="Adex home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#about" class="logo">
+            <img src="./assets/images/logo-light.png" width="74" height="24" alt="Adex home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <div class="checkbox-wrapper-10">
+              <input checked="" type="checkbox" id="cb5" class="tgl tgl-flip" onclick="toggleClasses()">
+              <label for="cb5" data-tg-on="English" data-tg-off="Arabic" class="tgl-btn"></label>
+            </div>
+          </li>
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#solutions" class="navbar-link">Solutions</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:thenovelagency@gmail.com" class="contact-link">thenovelagency@gmail.com</a>
+
+          <a href="tel:0775936888" class="contact-link">07759368883</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61551866888835&mibextid=LQQJ4d" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="btn btn-primary">Contact Us</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title eng">Make Creative Advertisements With Us.</h1>
+            <h1 class="h1 hero-title arabicWhite arb">أنشئ إعلانات إبداعية معنا</h1>
+
+            <p class="hero-text eng">
+              We’re a media production company that focuses on establishing long-term relationships with customers.
+            </p>
+
+            
+            <p class="hero-text arabicWhite arb">
+              نحن شركة إنتاج إعلامي تركز على إقامة علاقات طويلة الأمد مع العملاء
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#about" class="btn btn-primary">Explore Now</a>
+
+              <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/herp-slide-1.gif" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.gif" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label" id="about">
+        <div class="container">
+
+          <p class="section-subtitle eng" id="service-label">What We Do?</p>
+          <p class="section-subtitle arabicLightBrown arb" id="service-label">من نحن؟</p>
+
+          <h2 class="h2 section-title eng">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+          <h2 class="h2 section-title arabicBlack arb">
+            الخدمة التي نقدمها مصممة خصيصًا لتلبية احتياجاتك
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title eng">24/7 Support</h3>
+                <h3 class="h4 card-title arabicBlack arb">خدمة طول الأسبوع</h3>
+
+                <p class="card-tex eng">
+                  our dedicated team is here for your business around the clock, providing 
+                  unparalleled assistance whenever you need it.
+                </p>
+
+                <p class="card-text arabicBrown arb">
+                  فريقنا المتخصص متواجد هنا لأعمالك على مدار الساعة، ويقدم مساعدة لا مثيل لها عندما تحتاج إليها
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title eng">High Quality</h3>
+                <h3 class="h4 card-title arabicBlack arb">جودة عالية</h3>
+
+                <p class="card-text eng">
+                  Elevate your experience with our commitment to excellence. 
+                  Experience the pinnacle of perfection with us.
+                </p>
+
+                <p class="card-text arabicBrown arb">
+                  ارفع مستوى تجربتك مع التزامنا بالتميز. استمتع بتجربة قمة الكمال معنا, نحن نقدم اعلى جودة في السوق
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title eng">Fast Updates</h3>
+                <h3 class="h4 card-title arabicBlack arb">تحديثات سريعة</h3>
+
+                <p class="card-text eng">
+                  We deliver projects Fast, ensuring exceptional quality with
+                  hight customizability rate for your business with unique ideas.
+                </p>
+
+                <p class="card-text arabicBrown arb">
+                  نحن نقوم بتسليم المشاريع بسرعة، مما يضمن جودة استثنائية مع معدل تخصيص مرتفع لعملك بأفكار فريدة
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title eng">Market Research</h3>
+                <h3 class="h4 card-title arabicBlack arb">التسويق</h3>
+
+                <p class="card-text eng">
+                  Gain valuable insights with our comprehensive market analysis. 
+                  providing you strategic data for informed decisions.
+                </p>
+
+                <p class="card-text arabicBrown arb">
+                  احصل على رؤى قيمة من خلال تحليلنا الشامل للسوق. وتزويدك ببيانات استراتيجية لاتخاذ قرارات مستنيرة
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle eng" id="about-label">Why Choose Us?</p>
+            <p class="section-subtitle arabicLightBrown arb" id="about-label">لماذا تختارنا</p>
+
+            <h2 class="h2 section-title eng">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <h2 class="h2 section-title arabicBlack arb">
+              نحن نقدم جميع انواع الحلول لجعل الحياة أسهل لعملائنا
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5 eng">Professional Design</spna>
+                      <spna class="span h5 arabicBlack arb">تصاميم احترافية</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content eng">
+                    At Novel Creative, we understand the power of visual communication. Our team
+                    of highly skilled and creative designers is dedicated to delivering professional
+                    design solutions that go beyond aesthetics. We believe in the transformative impact
+                    of a well-crafted design, and we work closely with our clients to understand their
+                    unique vision and translate it into compelling visuals. Whether it's a logo, website,
+                    or marketing collateral, our professional design services are tailored to make a lasting
+                    impression and elevate your brand identity.
+                  </p>
+
+                  <p class="accordion-content arabicBlack arb">    
+في شركتنا نحن نفهم قوة التواصل المرئي. فريقنا من المصممين ذوي المهارات العالية والمبدعين مكرس لتقديم حلول التصميم الاحترافية التي تتجاوز الجماليات. نحن نؤمن بالتأثير التحويلي للتصميم الجيد التصميم، ونعمل بشكل وثيق مع عملائنا لفهم رؤيتهم الفريدة وترجمتها إلى صور جذابة. سواء كان شعارًا أو موقعًا إلكترونيًا أو ضمانات تسويقية، فإن خدمات التصميم الاحترافية لدينا مصممة خصيصًا لترك انطباع دائم والارتقاء بهوية علامتك التجارية
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5 eng">Top-Notch Support</spna>
+                      <spna class="span h5 arabicBlack arb">دعم من الدرجة الأولى</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content eng">
+                    Customer satisfaction is at the core of our business philosophy.
+                    Our commitment to providing top-notch support sets us apart. We
+                    believe that excellent customer service is not just a feature but
+                    a fundamental aspect of a successful partnership. Our support team
+                    is here to assist you every step of the way, ensuring a seamless 
+                    experience. From addressing inquiries promptly to offering personalized solutions
+                    , we prioritize your needs. At Novel Creative, we don't just deliver products or 
+                    services we deliver an outstanding customer experience.
+                  </p>
+
+                  <p class="accordion-content arabicBlack arb">
+رضا العملاء هو جوهر فلسفة عملنا. إن التزامنا بتقديم دعم رفيع المستوى يميزنا عن غيرنا. نحن نؤمن بأن خدمة العملاء الممتازة ليست مجرد ميزة ولكنها جانب أساسي لشراكة ناجحة. فريق الدعم لدينا موجود لمساعدتك في كل خطوة على الطريق، مما يضمن تجربة سلسة. بدءًا من معالجة الاستفسارات على الفور وحتى تقديم حلول مخصصة، فإننا نعطي الأولوية لاحتياجاتك في شركتنا نحن لا نقدم المنتجات أو الخدمات فحسب، بل نقدم أيضًا تجربة متميزة للعملاء
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5 eng">Exclusive Assets</spna>
+                      <spna class="span h5 arabicBlack arb">أصول حصرية</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content eng">
+                    In a world where uniqueness matters, Novel Creative is your gateway to exclusive
+                    assets that set you apart from the competition. Our curated collection of assets
+                    , be it graphic elements, templates, or digital resources, is designed to give 
+                    your projects a distinctive edge. We believe in the power of exclusivity and the
+                    impact it can have on your brand's identity. By offering a range of exclusive assets
+                    , we empower our clients to stand out in a crowded market and make a lasting impression
+                    on their audience.
+                  </p>
+
+                  <p class="accordion-content arabicBlack arb">
+في عالم حيث التميز مهم، شركتنا هي بوابتك إلى الأصول الحصرية التي تميزك عن المنافسة. تم تصميم مجموعتنا المنسقة من الأصول، سواء كانت عناصر رسومية أو قوالب أو موارد رقمية، لمنح مشاريعك ميزة مميزة. نحن نؤمن بقوة التفرد والتأثير الذي يمكن أن يحدثه على هوية علامتك التجارية. ومن خلال تقديم مجموعة من الأصول الحصرية، فإننا نمكن عملائنا من التميز في سوق مزدحمة وترك انطباع دائم لدى جمهورهم
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label" id="solutions">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle eng" id="feautre-label">Our Solutions</p>
+            <p class="section-subtitle arabicLightBrown arb" id="feautre-label">حلولنا</p>
+
+            <h2 class="h2 section-title eng">
+              Our comprehensive solutions are designed to address the unique needs of our clients.
+            </h2>
+
+            <h2 class="h2 section-title arabicBlack arb">
+تم تصميم حلولنا الشاملة لتلبية الاحتياجات الفريدة لعملائنا
+            </h2>
+
+            <p class="section-text eng">
+              At Novel Creative, we don't just offer solutions 
+              we provide pathways to success. Each of our solutions
+              is crafted with precision and backed by a commitment to 
+              excellence. Partner with us to unlock the full potential
+              of your business and experience a transformative journey
+              toward growth and prosperity.
+            </p>
+
+            <p class="section-text arabicBrown arb">
+              في شركتنا، نحن لا نقدم الحلول فحسب، بل نوفر أيضًا مسارات للنجاح. تم تصميم كل حل من حلولنا بدقة ومدعوم بالالتزام والتميز. كن شريكًا معنا لإطلاق الإمكانات الكاملة لعملك وتجربة رحلة تحويلية نحو النمو والازدهار
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span eng">
+                    Strategic Brand Development.
+                  </span>
+
+                  <span class="span arabicBrown arb">
+                    تطوير العلامة التجارية الاستراتيجية
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span eng">
+                    High Quality Web Design and Development.
+                  </span>
+
+                  <span class="span arabicBrown arb">
+                    تصميم وتطوير مواقع ويب عالية الجودة
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span eng">
+                    24/7 Technical Support Services.
+                  </span>
+
+                  <span class="span arabicBrown arb">
+                    خدمات الدعم الفني
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span eng">
+                    Exclusive Content and Marketing Assets.
+                  </span>
+
+                  <span class="span arabicBrown arb">
+                    المحتوى الحصري والأصول التسويقية
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">120</span>
+
+                <spna class="span eng">Completed Projects</spna>
+
+                <span class="span arabicWhite arb">
+                  المشاريع المنجزة
+                </span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">135</span>
+
+                <spna class="span eng">Happy Customers</spna>
+
+                <span class="span arabicWhite arb">
+                  رضى الزبائن
+                </span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">60+</span>
+
+                <spna class="span eng">Expert Employees</spna>
+
+                <span class="span arabicWhite arb">
+                  المختصون
+                </span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">12</span>
+
+                <spna class="span eng">Awards Won</spna>
+
+                <span class="span arabicWhite arb">
+                  جوائز
+                </span>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label" id="projects">
+        <div class="container">
+
+          <p class="section-subtitle eng" id="project-label">Projects</p>
+          <p class="section-subtitle arabicLightBrown arb" id="project-label">مشاريعنا</p>
+
+          <h2 class="h2 section-title eng">
+            Check out some of our awesome projects with creative ideas and great design.
+          </h2>
+
+          <h2 class="h2 section-title arabicBlack arb">
+            تحقق من بعض مشاريعنا الرائعة التي تحتوي على أفكار إبداعية وتصميم رائع
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IK7eTIf44/?igshid=ODhhZWM5NmIwOQ%3D%3D" 
+                    class="card-title eng">Our Work in Iraqi Goverment Sector</a>
+                  </h3>
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IK7eTIf44/?igshid=ODhhZWM5NmIwOQ%3D%3D" 
+                    class="card-title arabicBlack arb">
+                    عملنا في القطاع الحكومي العراقي</a>
+                  </h3>
+
+                  <p class="card-text eng">
+                    We raised the banner of challenge and excellence in our
+                     work for the Iraqi government sector.
+                  </p>
+
+                  <p class="card-text arabicBrown arb">
+                    رفعنا راية التحدي والتميز في عملنا للقطاع الحكومي العراقي
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">November 27</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Graphic Design</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IMOxcopiY/?igshid=ODhhZWM5NmIwOQ%3D%3D" class="card-title eng">Dream Bodcasting Design</a>
+                  </h3>
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IMOxcopiY/?igshid=ODhhZWM5NmIwOQ%3D%3D"
+                    class="card-title arabicBlack arb">تصميمنا لبودكاست الحلم</a>
+                  </h3>
+
+                  <p class="card-text eng">
+                    The novel is where ambition pulses, and successes transcend borders
+                  </p>
+
+                  <p class="card-text arabicBrown arb">
+                    الرواية حيث ينبض الطموح ، وتتجاوز النجاحات الحدود
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">November 27</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Brand Design</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IKNf4IZxN/" class="card-title eng">Majd Adil Brand Graphic Design</a>
+                  </h3>
+
+                  <h3 class="h3">
+                    <a href="https://www.instagram.com/p/C0IKNf4IZxN/"
+                    class="card-title arabicBlack arb">تصميمنا لماجد عادل</a>
+                  </h3>
+
+                  <p class="card-text eng">
+                    The novel is where ambition pulses, and successes transcend borders
+                  </p>
+
+                  <p class="card-text arabicBrown arb">
+                    الرواية حيث ينبض الطموح ، وتتجاوز النجاحات الحدود
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">November 27</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Brand Design</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title eng">
+            Enhance your business by using our services and grow your audience.
+          </h2>
+
+          <h2 class="h2 section-title arabicWhite arb">
+            عزز أعمالك باستخدام خدماتنا وقم بتنمية جمهورك
+          </h2>
+
+          <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="btn btn-primary">Contact Us</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="logo">
+          <img src="./assets/images/logo-light.png" width="34" height="24" alt="Adex home">
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 The Novel Agency. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61551866888835&mibextid=LQQJ4d" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/thenovel.agency?igshid=MzMyNGUyNmU2YQ==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Baghdad Al Krada - Diamond mall - floor 6 - Office A14
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:thenovelagency@email.com" class="footer-link">thenovelagency@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:07759368883" class="footer-link">07759368883</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#home" class="footer-link">Home Page</a>
+        </li>
+
+        <li>
+          <a href="#about" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#projects" class="footer-link">Projects</a>
+        </li>
+
+        <li>
+          <a href="#solutions" class="footer-link">Our Solutions</a>
+        </li>
+
+        <li>
+          <a href="#about" class="footer-link">Why choose us</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
